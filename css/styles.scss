@@ -1,0 +1,94 @@
+$light-font: #fff;
+$floral-font: #ddd;
+
+// backgroud-color
+$background-dark: #272928;
+$background-light: #a6adaa;
+
+@mixin zero-margin ($pad-up-dn, $pad-left-right) {
+    margin: 0 auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+body{
+    background-color: $background-light;
+}
+
+.navbar{
+    background: $background-dark;
+    color: $floral-font;
+    
+}
+
+.navbar a{
+    color: $floral-font;
+}
+
+#headerimg{
+    height: 85vh;
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    background-repeat: no-repeat;
+    // background-position: fixed;
+
+    background-image: url('../images/background-header.jpg'), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+
+    
+}
+.caption{
+    position: absolute;
+    z-index: 1;
+    // right: 30%;
+    color: white;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    // font-size: 40px;
+}
+#socialbtn{
+    // right: 0;
+    position: fixed;
+    z-index: 999;
+    left: 20px;
+}
+.btn-social-icon{
+    // position: fixed;
+    border-radius: 50px;
+    box-shadow:0px 2px 5px 0px grey ;
+    width: 35px;
+    height: 35px;;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 5px;
+    // left: 100px;
+    transition: .2s ease-out;
+    display: block;
+    
+    // margin-right: 10px;
+}
+.btn-social-icon:nth-child(1):hover{
+    width: 150px;
+    color: #3b5998;
+}
+.btn-social-icon:nth-child(2):hover{
+    width: 150px;
+    color:  #00acee;
+}
+.btn-social-icon:nth-child(3):hover{
+    width: 150px;
+    color: #3f729b ;
+}
+.btn-social-icon:nth-child(4):hover{
+    width: 150px;
+}
+// .card-body{
+    // background: $background-light;
+// }
+
