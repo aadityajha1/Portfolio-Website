@@ -24,15 +24,17 @@ body{
 }
 
 #headerimg{
-    height: 85vh;
+    height: 90vh;
     position: relative;
     width: 100%;
     margin-left: 0px;
     background-repeat: no-repeat;
     // background-position: fixed;
-
-    background-image: url('../images/background-header.jpg'), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    // opacity: 0.5;
+    background: rgba($color: #000000, $alpha: 0.5);
+    background-image: url('../images/background-header.jpg'), linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
     background-attachment: fixed;
+
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -50,6 +52,7 @@ body{
     text-align: center;
     align-self: center;
     align-content: center;
+    opacity: 1;
     // font-size: 40px;
 }
 #socialbtn{
@@ -57,6 +60,7 @@ body{
     position: fixed;
     z-index: 999;
     left: 20px;
+    opacity: 1;
 }
 .btn-social-icon{
     // position: fixed;
@@ -75,15 +79,17 @@ body{
 }
 .btn-social-icon:nth-child(1):hover{
     width: 150px;
-    color: #3b5998;
+    background-color: #3b5998;
+    color: white;
 }
 .btn-social-icon:nth-child(2):hover{
     width: 150px;
-    color:  #00acee;
+    background-color:  #00acee;
+    color: white;
 }
 .btn-social-icon:nth-child(3):hover{
     width: 150px;
-    color: #3f729b ;
+    background-color: #C13584 ;
 }
 .btn-social-icon:nth-child(4):hover{
     width: 150px;
@@ -91,4 +97,3 @@ body{
 // .card-body{
     // background: $background-light;
 // }
-

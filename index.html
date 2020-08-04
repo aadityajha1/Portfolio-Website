@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
@@ -12,7 +14,7 @@
 <body>
     <!-- header part -->
     <header class="jumbotron m-0 p-0">
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark m-0">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark m-0">
             <a href="#" class="navbar-brand mr-sm-5 ml-sm-5">
                 <img src="images/logo1.png" class="img-fluid" alt="BrandLogo" height="50" width="50">
                 <strong id="brand-text " class="ml-2">Aaditya Jha</strong>
@@ -24,21 +26,21 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav mr-auto ">
                     <li class="nav-item active"><a class="nav-link" href=""><i class="fa fa-home"></i> HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-blog"></i> BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">PORTFOLIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-info"></i> ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-handshake-o"></i> SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fas fa-blog"></i> BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-graduation-cap"></i> PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-address-card"></i> CONTACT</a></li>
                 </ul>
                 <span class="nav-link">
-                <button class="btn btn-danger" id="contactbtn">Contact Me</button>
+                <a class="btn btn-danger" id="contactbtn">Contact Me</a>
             </span>
             </div>
         </nav>
         <section class="row" style="margin-top: 6%;" id="headerimg">
             
             <div class="caption col-sm-6 offset-sm-3">
-                <h3 id="header">Hi! I'm </h3><h1 class="display-sm-1">Aaditya Jha</h1>
+                <h3 id="header">Hi! I'm </h3><h1 class="display-1">Aaditya Jha</h1>
                 <p>Web Developer</p>
            </div>
            
@@ -51,6 +53,50 @@
            
         </section>
     </header>
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" role="dialog" >
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">
+                        Contact Me
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group row">
+                            
+                                <label for="Name" class="form-label col-sm-2">Name</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            
+                        </div>
+                        <div class="form-group row">
+                            
+                            <label for="email" class="form-label col-sm-2">Email</label>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        
+                    </div>
+                    <div class="form-group row">
+                            
+                        <label for="phone" class="form-label col-sm-2">Name</label>
+                        <div class="col-sm-6">
+                            <input type="tel" class="form-control" placeholder="Name">
+                        </div>
+                    
+                </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 <div class="container">
     <div class="row mt-4">
         <div class="col-sm-5">
